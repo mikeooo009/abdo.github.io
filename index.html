@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: url('https://obambu.com/guide/what-is-node-js/') no-repeat center center/cover;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       animation: fadeIn 1.5s;
+      color: white;
     }
     @keyframes fadeIn {
       0% { opacity: 0; }
@@ -21,6 +22,8 @@
       color: white;
       padding: 100px 0;
       text-align: center;
+      border-radius: 10px;
+      margin: 20px;
     }
     .hero h1 {
       font-size: 3rem;
@@ -28,15 +31,18 @@
     .section-title {
       text-align: center;
       margin-bottom: 40px;
+      color: #fff;
     }
     .icon {
       font-size: 3rem;
+      color: #FFD700;
     }
     footer {
-      background: #343a40;
+      background: #764ba2;
       color: white;
       padding: 20px 0;
       text-align: center;
+      border-radius: 10px;
     }
     .whatsapp-btn {
       position: fixed;
@@ -44,11 +50,31 @@
       right: 20px;
       background-color: #25D366;
       color: white;
-      font-size: 24px;
+      font-size: 32px;
       border-radius: 50%;
-      padding: 15px;
+      padding: 20px;
       text-align: center;
       z-index: 1000;
+    }
+    .website-list {
+      list-style: none;
+      padding: 0;
+    }
+    .website-list li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #6a0dad;
+      border-radius: 5px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .website-list li:hover {
+      transform: scale(1.05);
+      background: #764ba2;
+    }
+    .website-list a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -56,86 +82,39 @@
 
 <!-- Hero Section -->
 <section class="hero">
-  <h1>Alzaher Abdelmoneim</h1>
+  <h1>Welcome to My Portfolio</h1>
   <p>Backend Developer | Node.js | ASP.NET | WordPress | Payment Integration</p>
+  <p>Location: Dubai | Available for Remote or Onsite Work</p>
   <a href="#contact" class="btn btn-primary">Contact Me</a>
 </section>
 
-<!-- About Section -->
+<!-- Websites Section -->
 <section class="container my-5">
-  <div class="row">
-    <div class="col-md-6">
-      <img src="profile.jpg" alt="Profile" class="img-fluid rounded">
-    </div>
-    <div class="col-md-6">
-      <h2>About Me</h2>
-      <p>Experienced Software Engineer specializing in Node.js, payment gateway integration, and microservices for taxi service applications. Proficient in WordPress development and frontend technologies.</p>
-    </div>
-  </div>
+  <h2 class="section-title">Websites</h2>
+  <ul class="website-list">
+    <li><a href="https://taxi-reservation-vtc.com/" target="_blank">Taxi Reservation VTC</a> - Built with PHP and HTML.</li>
+    <li><a href="https://taxiparis-reservezvotrevtc.fr/" target="_blank">Taxi Paris VTC</a> - Developed using React.</li>
+    <li><a href="https://bruxelles-taxis.com/" target="_blank">Bruxelles Taxis</a> - Built with PHP and HTML.</li>
+    <li><a href="https://coq-chauffeur.site" target="_blank">COQ Chauffeur</a> - Built using WordPress.</li>
+  </ul>
 </section>
 
-<!-- Skills Section -->
+<!-- Projects Section -->
 <section class="container my-5">
-  <h2 class="section-title">Technical Skills</h2>
-  <div class="row text-center">
-    <div class="col-md-3">
-      <i class="fab fa-node-js icon"></i>
-      <h5>Node.js</h5>
-    </div>
-    <div class="col-md-3">
-      <i class="fab fa-react icon"></i>
-      <h5>React</h5>
-    </div>
-    <div class="col-md-3">
-      <i class="fab fa-wordpress icon"></i>
-      <h5>WordPress</h5>
-    </div>
-    <div class="col-md-3">
-      <i class="fas fa-database icon"></i>
-      <h5>SQL</h5>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Section -->
-<section class="container my-5">
-  <h2 class="section-title">Portfolio</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <i class="fas fa-car icon"></i>
-        <div class="card-body">
-          <h5 class="card-title">Taxi Service App</h5>
-          <p class="card-text">Developed a scalable backend with payment gateway integration.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <i class="fas fa-desktop icon"></i>
-        <div class="card-body">
-          <h5 class="card-title">Admin Panel</h5>
-          <p class="card-text">Built a responsive admin panel for fleet management.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <i class="fas fa-money-check-alt icon"></i>
-        <div class="card-body">
-          <h5 class="card-title">Payment Integrations</h5>
-          <p class="card-text">Integrated Stripe, PayPal, and Square for seamless payments.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h2 class="section-title">Mobile Applications</h2>
+  <ul class="website-list">
+    <li><a href="https://apps.apple.com/fr/app/coq-client/id1558214280" target="_blank">COQ Client (iOS)</a> - Backend developed using Node.js and Firebase.</li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.ouitaxi.fr&hl=fr&gl=US" target="_blank">COQ Client (Android)</a> - Backend built with Node.js, Firebase, and microservices.</li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.godispatch.fr&hl=fr&gl=US" target="_blank">Go Dispatch (Android)</a> - Backend implemented using ASP.NET Core and SQL Server.</li>
+    <li><a href="https://apps.apple.com/fr/app/coq-chauffeur/id1503893435" target="_blank">COQ Chauffeur (iOS)</a> - Backend integrated with Node.js and Stripe.</li>
+  </ul>
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="container my-5">
   <h2 class="section-title">Contact Me</h2>
-  <p><i class="fas fa-envelope"></i> abdo.zah99@gmail.com</p>
-  <p><i class="fas fa-phone"></i> +971 50 305 3647</p>
+  <p><i class="fas fa-envelope"></i> <a href="mailto:abdo.zah99@gmail.com">abdo.zah99@gmail.com</a></p>
+  <p><i class="fas fa-phone"></i> <a href="tel:+971503053647">+971 50 305 3647</a></p>
 </section>
 
 <!-- Footer -->
