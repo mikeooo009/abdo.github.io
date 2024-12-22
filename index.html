@@ -9,9 +9,15 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: url('https://obambu.com/guide/what-is-node-js/') no-repeat center center/cover;
+      animation: fadeIn 1.5s;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg') no-repeat center center/cover;
+      background: rgba(0, 0, 0, 0.6);
       color: white;
       padding: 100px 0;
       text-align: center;
@@ -23,15 +29,26 @@
       text-align: center;
       margin-bottom: 40px;
     }
-    .card img {
-      height: 200px;
-      object-fit: cover;
+    .icon {
+      font-size: 3rem;
     }
     footer {
       background: #343a40;
       color: white;
       padding: 20px 0;
       text-align: center;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      font-size: 24px;
+      border-radius: 50%;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -40,7 +57,7 @@
 <!-- Hero Section -->
 <section class="hero">
   <h1>Alzaher Abdelmoneim</h1>
-  <p>Backend Developer | Node.js | ASP.NET | Payment Integration</p>
+  <p>Backend Developer | Node.js | ASP.NET | WordPress | Payment Integration</p>
   <a href="#contact" class="btn btn-primary">Contact Me</a>
 </section>
 
@@ -52,7 +69,7 @@
     </div>
     <div class="col-md-6">
       <h2>About Me</h2>
-      <p>Experienced Software Engineer specializing in Node.js, payment gateway integration, and microservices for taxi service applications. Strong knowledge of backend and frontend development with scalable solutions.</p>
+      <p>Experienced Software Engineer specializing in Node.js, payment gateway integration, and microservices for taxi service applications. Proficient in WordPress development and frontend technologies.</p>
     </div>
   </div>
 </section>
@@ -62,19 +79,19 @@
   <h2 class="section-title">Technical Skills</h2>
   <div class="row text-center">
     <div class="col-md-3">
-      <i class="fab fa-node-js fa-3x"></i>
+      <i class="fab fa-node-js icon"></i>
       <h5>Node.js</h5>
     </div>
     <div class="col-md-3">
-      <i class="fab fa-react fa-3x"></i>
+      <i class="fab fa-react icon"></i>
       <h5>React</h5>
     </div>
     <div class="col-md-3">
-      <i class="fab fa-aws fa-3x"></i>
-      <h5>AWS</h5>
+      <i class="fab fa-wordpress icon"></i>
+      <h5>WordPress</h5>
     </div>
     <div class="col-md-3">
-      <i class="fas fa-database fa-3x"></i>
+      <i class="fas fa-database icon"></i>
       <h5>SQL</h5>
     </div>
   </div>
@@ -86,7 +103,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="card">
-        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+        <i class="fas fa-car icon"></i>
         <div class="card-body">
           <h5 class="card-title">Taxi Service App</h5>
           <p class="card-text">Developed a scalable backend with payment gateway integration.</p>
@@ -95,7 +112,7 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+        <i class="fas fa-desktop icon"></i>
         <div class="card-body">
           <h5 class="card-title">Admin Panel</h5>
           <p class="card-text">Built a responsive admin panel for fleet management.</p>
@@ -104,7 +121,7 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+        <i class="fas fa-money-check-alt icon"></i>
         <div class="card-body">
           <h5 class="card-title">Payment Integrations</h5>
           <p class="card-text">Integrated Stripe, PayPal, and Square for seamless payments.</p>
@@ -114,43 +131,22 @@
   </div>
 </section>
 
-<!-- Links Section -->
-<section class="container my-5">
-  <h2 class="section-title">Links</h2>
-  <ul>
-    <li><a href="https://taxi-reservation-vtc.com/" target="_blank">Taxi Reservation VTC</a></li>
-    <li><a href="https://taxiparis-reservezvotrevtc.fr/" target="_blank">Taxi Paris VTC</a></li>
-    <li><a href="https://bruxelles-taxis.com/" target="_blank">Bruxelles Taxis</a></li>
-    <li><a href="https://coq-chauffeur.site" target="_blank">COQ Chauffeur</a></li>
-    <li><a href="#">COQ Chauffeur App (iOS)</a></li>
-    <li><a href="#">COQ Chauffeur App (Android)</a></li>
-  </ul>
-</section>
-
 <!-- Contact Section -->
 <section id="contact" class="container my-5">
   <h2 class="section-title">Contact Me</h2>
-  <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name">
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email">
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send</button>
-  </form>
+  <p><i class="fas fa-envelope"></i> abdo.zah99@gmail.com</p>
+  <p><i class="fas fa-phone"></i> +971 50 305 3647</p>
 </section>
 
 <!-- Footer -->
 <footer>
   <p>&copy; 2024 Alzaher Abdelmoneim | <a href="mailto:abdo.zah99@gmail.com">abdo.zah99@gmail.com</a></p>
 </footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/971503053647" class="whatsapp-btn" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
